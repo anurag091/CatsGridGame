@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  position: relative;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 5%;
+  max-width: 8%;
+  padding: 0 4px;
+  padding: 1rem;
+  position: relative;
+  left: 5rem;
+  padding: 6rem 0;
+
+  img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 10rem;
+    width: 6rem;
+  }
+}
+
+.catsGrid {
+  width: 20%;
+  justify-content: right;
+  position: absolute;
+  left: 60%;
+  padding: 12rem 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+
+  div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-left: 1px solid #2196f3;
+    border-right: 1px solid lightgray;
+    height: 5rem;
+    width: 6.4rem;
+    border-top: 1px solid #2196f3;
+    border-bottom: 1px solid #2196f3;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
